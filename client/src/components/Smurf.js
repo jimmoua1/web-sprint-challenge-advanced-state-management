@@ -4,13 +4,16 @@ class Smurf extends React.Component {
     render() {
         const { smurf } = this.props;
 
-        return(<div data-testid="smurf" className="card">
+        return (<div data-testid="smurf" className="card">
+            <p>{smurf.name}</p>
+            <p>{smurf.position}</p>
+            <p>{smurf.nickname}</p>
+            <p>{smurf.description}</p>
         </div>);
     }
 }
 
 export default Smurf;
-
 //Task List:
 //1. Access smurf to be displayed through props.
 //2. Display the name, position, nickname and description of the provided smurf as needed.
